@@ -4,6 +4,8 @@
 
 為了方便自己重灌，也生成了目前需要的套件快速安裝清單，requirements.txt，這下載後用cmd到指定的資料夾後執行即可。
 
+另外也把塔羅牌的倒數功能給加上去了。
+
 ![image](https://github.com/user-attachments/assets/bb4c6be8-5e50-47b5-bb7d-550aff6dc5b9)
 
 =================我是分隔線=================
