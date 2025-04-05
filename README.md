@@ -1,3 +1,43 @@
+4/5更新。
+
+差別在main.py分出config.py及utils.py，把main.py再瘦身一點。
+
+DISCORD_BOT/                    # 🌟 專案主目錄
+│
+├── .env                        # 🔐 環境變數檔案（TOKEN / OWNER_ID 等設定）
+├── config.py                   # ⚙️ 設定檔，讀取 .env 資訊
+├── main.py                     # 🚀 Discord Bot 主程式入口
+├── requirements.txt            # 📦 依賴套件清單
+├── utils.py                    # 🛠️ 工具函式庫（後續可放共用邏輯）
+│
+├── cogs/                       # 🧩 Cog 擴充功能模組
+│   ├── __init__.py                 # 📦 初始化文件（目前可以是空的）
+│   ├── choose_cogs.py              # 🎲 選擇功能指令
+│   ├── clear_cogs.py               # 🧹 清除訊息指令
+│   ├── lucky_cogs.py               # 🍀 幸運運勢指令
+│   ├── picture_cogs.py             # 🖼️ 查詢圖片指令
+│   ├── sync_cogs.py                # 🔄 手動同步指令
+│   ├── tarot_cogs.py               # 🎴 塔羅牌功能指令
+│   └── zhezhe_cogs.py              # 📸 哲哲專用指令
+│
+├── data/                       # 🗂️ Bot 運作所需 JSON 資料
+│   ├── choose_answer.json          # 🎲 選擇功能 - 答案資料
+│   ├── choose_countdown.json       # ⏱️ 選擇功能 - 倒數提示語
+│   ├── choose_divider.json         # 🪢 選擇功能 - 分隔線樣式
+│   ├── lucky_Anime.json            # 🍀 幸運功能 - 動漫金句
+│   ├── lucky_color.json            # 🎨 幸運功能 - 幸運顏色
+│   ├── lucky_countdown.json        # ⏱️ 幸運功能 - 倒數提示語
+│   ├── lucky_fortunes.json         # 🧧 幸運功能 - 籤詩
+│   ├── lucky_suggestions.json      # 💡 幸運功能 - 建議語
+│   ├── tarot_big.json              # 🃏 塔羅牌 - 大牌資料
+│   ├── tarot_countdown.json        # ⏱️ 塔羅牌 - 倒數提示語
+│   ├── tarot_small.json            # 🃏 塔羅牌 - 小牌資料
+│   └── zhezhe_images.json          # 📸 哲哲專用圖庫資料
+│
+└── __pycache__/                # 🗂️ Python 自動生成的快取檔案（可忽略）
+
+=================我是分隔線=================
+
 這是一個用來架設Discord Bot的程式，我自己也是用這個。
 
 使用Discord裡的Slash，也就是用/取代一些像是!、#之類的，而且在對話框打上「/」會有彈出選單，看你的伺服器有幾個Bot有這功能就會有多少個，可參考下圖。
