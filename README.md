@@ -1,4 +1,20 @@
-4/5更新。
+2025/04/06更新。
+
+不一定會放上來，有點懶。
+
+在經過一整天的努力，再把cogs給瘦身，拆分成cogs只接收指令，utils是負責做邏輯運算。
+
+main.py也拆分成config.py以及utils.py，也稍微瘦身一下，如下圖。
+
+![image](https://github.com/user-attachments/assets/1ccceadb-fdb8-4a20-8771-d52ea37a3f11)
+
+現在的終端機畫面輸出如下。
+
+![image](https://github.com/user-attachments/assets/9e91a66e-361e-4658-a86f-dfcdaa079117)
+
+=================我是分隔線=================
+
+2025/04/05更新。
 
 差別在main.py分出config.py及utils.py，把main.py再瘦身一點。
 
